@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
+.wrapper {
+ 
+}
 
+.wrapper .carousel{
+    overflow: hidden;
+    white-space: nowrap;
+}
 
-
-
+.carousel img{
+    height: calc(100%*3/4);
+    object-fit: cover;
+    width: calc(100%/1);
+}
