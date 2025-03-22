@@ -65,24 +65,26 @@
 
     <h1 class="text-white text-center text-[18px] font-bold p-5">Gallery</h1>
     
-  <div class="wrapper  flex items-center justify-center">
-    <i class="fa-solid fa-angle-right fa-flip-horizontal text-white  bg-emerald-900 rounded-2xl p-2"></i>
+  <div class="wrapper  flex items-center justify-center p-2">
+    <i class="fa-solid fa-angle-right fa-flip-horizontal text-white  bg-emerald-900 rounded-xs p-2"></i>
     
 
-    <div class="carousel cursor-pointer flex flex-row ">
-      <img src="images/slide1.jpg">
-      <img src="images/slide2.jpg">
-      <img src="images/slide3.jpg">
+    <div class="carousel cursor-pointer flex flex-row gap-2 md:w-1/2">
+      <img class="rounded-md" src="images/slide1.jpg">
+      <img class="rounded-md" src="images/slide2.jpg">
+      <img class="rounded-md" src="images/slide3.jpg">
       
     </div>
 
-    <i class="fa-solid fa-angle-right text-white bg-emerald-900 rounded-2xl p-2"></i>
+    <i class="fa-solid fa-angle-right text-white bg-emerald-900 rounded-xs p-2"></i>
 
   </div>
 </div>
 <!--Gallery section end-->
 
   <script>
+
+    //script for dropdown menu
     document.addEventListener('DOMContentLoaded', () => {
       const toggleBtn = document.querySelector('.toggle-button');
       const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -90,6 +92,38 @@
         dropdownMenu.classList.toggle('hidden');
       });
     });
+
+    // script for gallery
+    document.addEventListener('DOMContentLoaded', () => {
+
+      let isDragStart = false, prevPageX, prevScrollLeft ;
+
+      const carousel = document.querySelector('.carousel');
+
+      const dragStart = () =>{
+        isDragStart = true;
+        prevPageX = e.pageX;
+        prevScrollLeft = carousel.scrollLeft;
+      };
+
+      const dragging = (e) =>{
+        if(!dragStart) return;
+        e.preventDefault();
+        let positionDiff = e.pageX - prevPageX;
+        carousel.scrollLeft =e.pageX;
+      };
+
+      const dragStop = () =>{
+        isDragStart = false;
+      };
+
+
+      carousel.addEventListener('mousedown',dragStart);
+      carousel.addEventListener('mousemove',dragging);
+      carousel.addEventListener('mouseup',dragStop);
+    
+    });
+
   </script>
 </body>
 
