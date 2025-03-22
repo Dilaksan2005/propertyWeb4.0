@@ -19,15 +19,15 @@
       class="nav z-10 p-3 flex items-center justify-between bg-[#009951] px-12 h-16 text-white lg:gap-8 fixed top-0 left-0 w-full lg:justify-between ">
 
       <div>
-        <a href="#" class="text-[14px] lg:text-2xl font-bold hover:text-emerald-950 whitespace-nowrap">Why Choose This
+        <a href="#feature" class="text-[14px] lg:text-2xl font-bold hover:text-emerald-950 whitespace-nowrap">Why Choose This
           Land?</a>
       </div>
 
       <div
         class="dropdown-menu hidden z-10 absolute top-16 left-0 max-lg:bg-[#0099529f] w-full flex flex-col items-center gap-6 py-2 text-[14px] font-bold  lg:flex lg:static lg:flex-row lg:justify-end xl:text-xl ">
         <ul class="flex flex-col items-center gap-6 lg:flex-row lg:justify-between lg:gap-8">
-          <li class="hover:text-emerald-950"><a href="">About the Land</a></li>
-          <li class="hover:text-emerald-950"><a href="">Gallery</a></li>
+          <li class="hover:text-emerald-950"><a href="#">About the Land</a></li>
+          <li class="hover:text-emerald-950"><a href="#gallery">Gallery</a></li>
           <li class="hover:text-emerald-950"><a href="">More Info</a></li>
           <li class="hover:text-emerald-950"><a href="">Location</a></li>
           <li class="hover:text-emerald-950"><a href="">Contact Us</a></li>
@@ -58,8 +58,11 @@
 
   </div>
 <!--Hero section end--> 
+
+<!--feature cards start-->
+  <div id="feature">
     <!--Card Section 1 Starts-->
-    <h2 class="m-5 text-center text-6xl font-bold">Key Features</h2>
+    <h2 class="m-5 text-center text-[18px] md:text-2xl font-bold">Key Features</h2>
     <div class="flex min-h-screen items-center justify-center">
       <div class="grid grid-cols-1 place-items-center gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <!-- Card 1 -->
@@ -147,24 +150,27 @@
         </div>
       </div>
     </div>
+
+  </div>
+<!--feature cards end-->
+
 <!--Gallery section start-->
+  <div id="gallery" class="container bg-[#009951] sm:min-w-screen">
 
-  <div class="container bg-[#009951]">
-
-    <h1 class="text-white text-center text-[18px] font-bold p-5">Gallery</h1>
+    <h1 class="text-white text-center text-[18px] font-bold p-5 md:text-2xl">Gallery</h1>
     
   <div class="wrapper  flex items-center justify-center p-2">
-    <i class="fa-solid fa-angle-right fa-flip-horizontal text-white  bg-emerald-900 rounded-xs p-2"></i>
+    <i id="left" class="fa-solid fa-angle-right fa-flip-horizontal text-white  bg-emerald-900 rounded-xs p-2"></i>
     
 
-    <div class="carousel cursor-pointer flex flex-row gap-2 md:w-1/2">
+    <div class="carousel cursor-pointer pb-6 flex flex-row gap-2 md:w-3/4 lg:w-2xl">
       <img class="rounded-md" src="images/slide1.jpg">
       <img class="rounded-md" src="images/slide2.jpg">
       <img class="rounded-md" src="images/slide3.jpg">
       
     </div>
 
-    <i class="fa-solid fa-angle-right text-white bg-emerald-900 rounded-xs p-2"></i>
+    <i id="right" class="fa-solid fa-angle-right text-white bg-emerald-900 rounded-xs p-2"></i>
 
   </div>
 </div>
@@ -184,11 +190,21 @@
     // script for gallery
     document.addEventListener('DOMContentLoaded', () => {
 
+      const carousel = document.querySelector(".carousel");
+      firstImg =carousel.querySelectorAll("img")[0];
+      arrowIcons = document.querySelectorAll(".wrapper i");
+
       let isDragStart = false, prevPageX, prevScrollLeft ;
+      let firstImgWidth = firstImg.clientWidth + 8;
 
-      const carousel = document.querySelector('.carousel');
+    arrowIcons.forEach(icon=>{  
+      icon.addEventListener('click',()=>{
+        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+      });
+    });
+      
 
-      const dragStart = () =>{
+      const dragStart = (e) =>{
         isDragStart = true;
         prevPageX = e.pageX;
         prevScrollLeft = carousel.scrollLeft;
@@ -198,7 +214,7 @@
         if(!dragStart) return;
         e.preventDefault();
         let positionDiff = e.pageX - prevPageX;
-        carousel.scrollLeft =e.pageX;
+        carousel.scrollLeft =prevScrollLeft - positionDiff;
       };
 
       const dragStop = () =>{
@@ -206,9 +222,9 @@
       };
 
 
-      carousel.addEventListener('mousedown',dragStart);
-      carousel.addEventListener('mousemove',dragging);
-      carousel.addEventListener('mouseup',dragStop);
+      // carousel.addEventListener('mousedown',dragStart);
+      // carousel.addEventListener('mousemove',dragging);
+      // carousel.addEventListener('mouseup',dragStop);
     
     });
 

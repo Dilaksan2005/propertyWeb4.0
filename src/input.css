@@ -6,6 +6,7 @@
 
 .wrapper .carousel{
     overflow: hidden;
+    scroll-behavior: smooth;
     white-space: nowrap;
 }
 
