@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -19,18 +19,16 @@
       class="nav z-10 p-3 flex items-center justify-between bg-[#009951] px-12 h-16 text-white lg:gap-8 fixed top-0 left-0 w-full lg:justify-between ">
 
       <div>
-        <a href="#feature" class="text-[14px] lg:text-2xl font-bold hover:text-emerald-950 whitespace-nowrap">Why Choose This
-          Land?</a>
+        <a href="#feature" class="text-[14px] lg:text-2xl font-bold hover:text-emerald-950 whitespace-nowrap">Why Choose This Land?</a>
       </div>
 
       <div
         class="dropdown-menu hidden z-10 absolute top-16 left-0 max-lg:bg-[#0099529f] w-full flex flex-col items-center gap-6 py-2 text-[14px] font-bold  lg:flex lg:static lg:flex-row lg:justify-end xl:text-xl ">
         <ul class="flex flex-col items-center gap-6 lg:flex-row lg:justify-between lg:gap-8">
-          <li class="hover:text-emerald-950"><a href="#">About the Land</a></li>
           <li class="hover:text-emerald-950"><a href="#gallery">Gallery</a></li>
-          <li class="hover:text-emerald-950"><a href="">More Info</a></li>
-          <li class="hover:text-emerald-950"><a href="">Location</a></li>
-          <li class="hover:text-emerald-950"><a href="">Contact Us</a></li>
+          <li class="hover:text-emerald-950"><a href="#moreabout">About the Land</a></li>
+          <li class="hover:text-emerald-950"><a href="#footer">Location</a></li>
+          <li id="contactUsBtn" class="hover:text-emerald-950"><a href="tel:+94776566868">Contact Us</a></li>
         </ul>
       </div>
 
@@ -60,7 +58,7 @@
 <!--Hero section end--> 
 
 <!--feature cards start-->
-<div id="feature">
+ <div id="feature">
   <!--Card Section 1 Starts-->
   <h2 class="m-5 text-center text-[18px] font-bold md:text-2xl">Key Features</h2>
   <div class="flex min-h-screen items-center justify-center">
@@ -68,42 +66,41 @@
       <!-- Card 1 -->
       <div class="m-5 flex h-[500px] w-[280px] min-w-[152px] flex-col items-center justify-between rounded-xl bg-[#E8FAEA] p-5 shadow-lg">
         <div class="flex flex-col items-center text-center">
-          <div class="mb-4 overflow-hidden rounded-xl">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
-            <polygon points="25,3 31,18 47,18 35,29 40,45 25,36 10,45 15,29 3,18 19,18" fill="yellow" stroke="black" stroke-width="1"/></svg></div>
+          <div class="mb-4">
+            <i class="fa-solid fa-location-dot fa-xl"></i>           
+          </div>
           <h5 class="mt-1 text-xl font-bold">Prime Location</h5>
-          <p class="mt-2 text-base">Just 2 minutes from Puttalam Road, 5 mins from Kurunegala town</p>
-          <p class="mt-5 text-base">புத்தளம் வீதியிலிருந்து 2 நிமிடங்கள், குருநாகல் நகரத்திலிருந்து 5 நிமிடங்கள்.</p>
+          <p class="mt-6 text-base">Just 2 minutes from Puttalam Road, 5 mins from Kurunegala town</p>
           <p class="mt-6 text-base">පුත්තලම පාරේ සිට මිනිත්තු 2 යි, කුරුණෑගල නගරයෙ සිට මිනිත්තු 5 යි.</p>
+          <p class="mt-6 text-base">புத்தளம் வீதியிலிருந்து 2 நிமிடங்கள், குருநாகல் நகரத்திலிருந்து 5 நிமிடங்கள்.</p>
+
         </div>
       </div>
 
       <!-- Card 2 -->
       <div class="m-5 flex h-[500px] w-[280px] min-w-[152px] flex-col items-center justify-between rounded-xl bg-[#E8FAEA] p-5 shadow-lg">
         <div class="flex flex-col items-center text-center">
-          <div class="mb-4 overflow-hidden rounded-xl">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
-           <polygon points="25,3 31,18 47,18 35,29 40,45 25,36 10,45 15,29 3,18 19,18" fill="yellow" stroke="black" stroke-width="1" />
-          </svg></div>
+          <div class="mb-4">
+            <i class="fa-solid fa-universal-access fa-xl"></i>
+          </div>
           <h5 class="text-xl font-bold">Convinient Access</h5>
-          <p class="mt-2 text-base">Conveniently located near bus routes, highways, and railway stations.</p>
+          <p class="mt-6 text-base">Conveniently located near bus routes, highways, and railway stations.</p>
+          <p class="mt-6 text-base">බස් මාර්ග, මහාමාර්ග, දුම්රිය මාර්ග වලට ආසන්නව</p>
           <p class="mt-6 text-base">பேருந்து வழித்தடங்கள், நெடுஞ்சாலைகள், ரயில்வே அருகில்</p>
-          <p class="mt-12 text-base">බස් මාර්ග, මහාමාර්ග, දුම්රිය මාර්ග වලට ආසන්නව</p>
+
         </div>
       </div>
 
       <!-- Card 3 -->
       <div class="m-5 flex h-[500px] w-[280px] min-w-[152px] flex-col items-center justify-between rounded-xl bg-[#E8FAEA] p-5 shadow-lg">
         <div class="flex flex-col items-center text-center">
-          <div class="mb-4 overflow-hidden rounded-xl">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
-            <polygon points="25,3 31,18 47,18 35,29 40,45 25,36 10,45 15,29 3,18 19,18" fill="yellow" stroke="black" stroke-width="1" />
-              </svg>
+          <div class="mb-4">
+            <i class="fa-solid fa-mountain-sun fa-xl"></i>
           </div>
-          <h5 class="text-xl font-bold">Stunning Rooms</h5>
-          <p class="mt-2 text-base">Scenic rock ranges: Athugala, Ibbagala, Aandagala, Yaddessagala</p>
+          <h5 class="text-xl font-bold">Stunning Views</h5>
+          <p class="mt-6 text-base">Scenic rock ranges: Athugala, Ibbagala, Aandagala, Yaddessagala</p>
+          <p class="mt-6 text-base">දර්ශනීය පාෂාණ පරාසයන්: ඇතුගල, ඉබ්බාගල, ආඳගල, යද්දස්සගල</p>
           <p class="mt-6 text-base">அழகிய மலைகள்: அத்துகல, இப்பக்கல, ஆண்டகல, யதேசகல</p>
-          <p class="mt-12 text-base">දර්ශනීය පාෂාණ පරාසයන්: ඇතුගල, ඉබ්බාගල, ආඳගල, යද්දස්සගල</p>
 
         </div>
       </div>
@@ -111,31 +108,27 @@
       <!-- Card 4 -->
       <div class="m-5 flex h-[500px] w-[280px] min-w-[152px] flex-col items-center justify-between rounded-xl bg-[#E8FAEA] p-5 shadow-lg">
         <div class="flex flex-col items-center text-center">
-          <div class="mb-4 overflow-hidden rounded-xl">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
-           <polygon points="25,3 31,18 47,18 35,29 40,45 25,36 10,45 15,29 3,18 19,18"
-            fill="yellow" stroke="black" stroke-width="1" /></svg>
+          <div class="mb-4">
+            <i class="fa-solid fa-city fa-xl"></i>
           </div>
           <h5 class="text-xl font-bold">Urban Essentials Nearby</h5>
-          <p class="mt-2 text-base">Only 5 minutes to banks, hospitals, schools, supermarkets, and parks.</p>
-          <p class="mt-6 text-base">வங்கிகள், மருத்துவமனைகள், பள்ளிகள், அங்காடிகள் -<br> 5 நிமிடங்கள்.</p>
+           <p class="mt-6 text-base">Only 5 minutes to banks, hospitals, schools, supermarkets, and parks.</p>
            <p class="mt-6 text-base">බැංකු, රෝහල්, පාසල්, සුපිරි වෙළඳසැල්, විනාඩි 5 ක දුරින්</p>
-        </div>
+           <p class="mt-6 text-base">வங்கிகள், மருத்துவமனைகள், பள்ளிகள், அங்காடிகள் -<br> 5 நிமிடங்கள்.</p>
+
+          </div>
       </div>
 
       <!-- Card 5 -->
       <div class="m-5 flex h-[500px] w-[280px] min-w-[152px] flex-col items-center justify-between rounded-xl bg-[#E8FAEA] p-5 shadow-lg">
         <div class="flex flex-col items-center text-center">
           <div class="mb-4 overflow-hidden rounded-xl">
-           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
-            <polygon points="25,3 31,18 47,18 35,29 40,45 25,36 10,45 15,29 3,18 19,18" fill="yellow" stroke="black" stroke-width="1" />
-            </svg>
-
+            <i class="fa-solid fa-handshake-angle fa-xl"></i>
           </div>
           <h5 class="text-xl font-bold">Recreational Access</h5>
-          <p class="mt-2 text-base">Perfect mix of residential comfort & commercial potential</p>
-          <p class="mt-11 text-base">குடியிருப்பு வசதி மற்றும் வணிக திறனின் சரியான கலவை</p>
-          <p class="mt-12 text-base">මෙම ස්ථානය පහසුකම් සහ වාණිජ අවස්ථාවන්ගේ ඉතා හොඳ සංයෝජනයකි.</p>
+          <p class="mt-6 text-base">Perfect mix of residential comfort & commercial potential</p>
+          <p class="mt-6 text-base">මෙම ස්ථානය පහසුකම් සහ වාණිජ අවස්ථාවන්ගේ ඉතා හොඳ සංයෝජනයකි.</p>
+          <p class="mt-6 text-base">குடியிருப்பு வசதி மற்றும் வணிக திறனின் சரியான கலவை</p>
         </div>
       </div>
 
@@ -143,20 +136,18 @@
       <div class="m-5 flex h-[500px] w-[280px] min-w-[152px] flex-col items-center justify-between rounded-xl bg-[#E8FAEA] p-5 shadow-lg">
         <div class="flex flex-col items-center text-center">
           <div class="mb-4 overflow-hidden rounded-xl">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
-            <polygon points="25,3 31,18 47,18 35,29 40,45 25,36 10,45 15,29 3,18 19,18" fill="yellow" stroke="black" stroke-width="1" />
-            </svg>
+            <i class="fa-solid fa-sack-dollar fa-xl"></i>
 
           </div>
           <h5 class="text-xl font-bold">Ideal Investment</h5>
-          <p class="mt-2 text-base">This land offers both residential comfort and commercial potential.</p>
-          <p class="mt-5 text-base">இந்த நிலம் குடியிருப்பு வசதி மற்றும் வணிக திறன் இரண்டையும் வழங்குகிறது.</p>
-          <p class="mt-5 text-base">නේවාසික සුවපහසුව සහ වාණිජමය පරිපූර්ණ මිශ්‍රණයක්</p>
+          <p class="mt-6 text-base">This land offers both residential comfort and commercial potential.</p>
+          <p class="mt-6 text-base">නේවාසික සුවපහසුව සහ වාණිජමය පරිපූර්ණ මිශ්‍රණයක්</p>
+          <p class="mt-6 text-base">இந்த நிலம் குடியிருப்பு வசதி மற்றும் வணிக திறன் இரண்டையும் வழங்குகிறது.</p>
         </div>
       </div>
     </div>
   </div>
-
+</div>
 <!--feature cards end-->
 <!--Gallery section start-->
   <div id="gallery" class="container bg-[#009951] sm:min-w-screen">
@@ -171,6 +162,13 @@
       <img class="rounded-md" src="images/slide1.jpg">
       <img class="rounded-md" src="images/slide2.jpg">
       <img class="rounded-md" src="images/slide3.jpg">
+      <img class="rounded-md" src="images/slide4.jpg">
+      <img class="rounded-md" src="images/slide5.jpg">
+      <img class="rounded-md" src="images/slide6.jpg">
+      <img class="rounded-md" src="images/slide7.jpg">
+      <img class="rounded-md" src="images/slide8.jpg">
+      <img class="rounded-md" src="images/slide9.jpg">
+      <img class="rounded-md" src="images/slide10.jpg">
       
     </div>
 
@@ -179,8 +177,11 @@
   </div>
 </div>
 <!--Gallery section end-->
+
+
 <!-- More About LAND Starts -->
-<h2 class="m-10 text-center text-5xl font-bold">More About Land</h2>
+<div id="moreabout">
+<h2 class="text-center text-[18px] font-bold p-5 md:text-2xl">More About Land</h2>
 
 <!-- Card Section 1 -->
 <div class=" mt-10 mb-15 bg-[#e1ffd6]">
@@ -455,7 +456,10 @@
     </div>
   </div>
 </div>
+</div>
 <!--More about Land Ends-->
+
+<div id="footer">
 <!--Footer STARTS Here-->
 <!-- Locaton Section -->
 <div class="container bg-[#009951] sm:min-w-screen">
@@ -476,10 +480,13 @@
     </div>
   </div>
 </div>
+</div>
 <!--Footer ENDS Here-->
 
 <!--JAVASCRIPT-->
-  <script>
+
+
+  <!-- old script <script>
 
     //script for dropdown menu
     document.addEventListener('DOMContentLoaded', () => {
@@ -499,39 +506,95 @@
 
       let isDragStart = false, prevPageX, prevScrollLeft ;
       let firstImgWidth = firstImg.clientWidth + 8;
+      let isScrolling = false;
+
 
     arrowIcons.forEach(icon=>{  
       icon.addEventListener('click',()=>{
+        if(isScrolling) return;
+        isScrolling = true;
         carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => {
+        isScrolling = false;
+      }, 500);
+
       });
     });
       
-
-      const dragStart = (e) =>{
-        isDragStart = true;
-        prevPageX = e.pageX;
-        prevScrollLeft = carousel.scrollLeft;
-      };
-
-      const dragging = (e) =>{
-        if(!dragStart) return;
-        e.preventDefault();
-        let positionDiff = e.pageX - prevPageX;
-        carousel.scrollLeft =prevScrollLeft - positionDiff;
-      };
-
-      const dragStop = () =>{
-        isDragStart = false;
-      };
-
-
-      // carousel.addEventListener('mousedown',dragStart);
-      // carousel.addEventListener('mousemove',dragging);
-      // carousel.addEventListener('mouseup',dragStop);
     
     });
+    document.getElementById('contactUsBtn').addEventListener('click', function () {
+    // Check if the device is mobile or has a dialer app
+    if (isMobileDevice()) {
+      // If it's a mobile device, open the dialer with the phone number
+      window.location.href = 'tel:+1234567890';
+    } else {
+      // If it's a desktop or a device without dialer app, scroll to the footer
+      document.getElementById('footer').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
 
-  </script>
+  // Function to detect if the device is mobile (or has phone dialer support)
+  function isMobileDevice() {
+    return /Mobi|Android|iPhone/i.test(navigator.userAgent);
+  }
+
+  </script> -->
+
+ <!-- new script -->
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Script for dropdown menu
+    const toggleBtn = document.querySelector('.toggle-button');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    toggleBtn.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+    });
+
+    // Script for gallery
+    const carousel = document.querySelector(".carousel");
+    const firstImg = carousel.querySelectorAll("img")[0];
+    const arrowIcons = document.querySelectorAll(".wrapper i");
+
+    let isScrolling = false;
+    const firstImgWidth = firstImg.clientWidth + 8;
+
+    arrowIcons.forEach(icon => {  
+      icon.addEventListener('click', () => {
+        if (isScrolling) return;
+        isScrolling = true;
+        carousel.scrollLeft += icon.id === "left" ? -firstImgWidth : firstImgWidth;
+        
+        setTimeout(() => {
+          isScrolling = false;
+        }, 500);
+      });
+    });
+
+    // Script for 'Contact Us' Button
+    document.getElementById('contactUsBtn').addEventListener('click', function () {
+      if (isMobileDevice()) {
+        // Open the dialer on mobile
+        window.location.href = 'tel:+1234567890';
+      } else {
+        // Scroll to the footer on desktop or non-mobile
+        document.getElementById('footer').scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+
+  });
+
+  // Function to detect if the device is mobile (or has phone dialer support)
+  function isMobileDevice() {
+    return /Mobi|Android|iPhone/i.test(navigator.userAgent);
+  }
+</script>
+
 </body>
 
 </html>
