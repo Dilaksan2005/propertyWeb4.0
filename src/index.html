@@ -184,7 +184,7 @@
 
  <!-- Card 1 -->
  <div class="flex items-center justify-center">
-   <div class="m-5 flex max-w-[80%] flex-col items-center justify-between overflow-hidden rounded-xl bg-[#f6fff7] p-5 shadow-lg">
+   <div class="m-5 flex max-w-[80%] flex-col items-center justify-between overflow-hidden rounded-xl bg-[#E8FAEA]  p-5 shadow-lg">
      <div class="flex flex-col items-center text-center">
        <h5 class="mt-1 text-xl font-bold">Location & Accessibility</h5>
        <br />
@@ -215,7 +215,7 @@
 
  <!-- Card 2 -->
  <div class="flex items-center justify-center">
-   <div class="m-5 flex w-full max-w-[80%] flex-col items-center justify-between overflow-hidden rounded-xl bg-[#f6fff7] p-5 shadow-lg">
+   <div class="m-5 flex w-full max-w-[80%] flex-col items-center justify-between overflow-hidden rounded-xl bg-[#E8FAEA] p-5 shadow-lg">
      <div class="flex flex-col items-center text-center">
        <h5 class="mt-1 text-xl font-bold">Investment & Development Potential</h5>
        <br />
@@ -241,7 +241,7 @@
 
  <!-- Card 3 -->
  <div class="flex items-center justify-center">
-   <div class="m-5 flex w-full max-w-[80%] flex-col items-center justify-between overflow-hidden rounded-xl bg-[#f6fff7] p-5 shadow-lg">
+   <div class="m-5 flex w-full max-w-[80%] flex-col items-center justify-between overflow-hidden rounded-xl bg-[#E8FAEA] p-5 shadow-lg">
      <div class="flex flex-col items-center text-center">
        <h5 class="mt-1 text-xl font-bold">Nearby Amenities</h5>
        <br />
@@ -266,7 +266,7 @@
 
  <!-- Card 4 -->
  <div class="flex items-center justify-center">
-   <div class="m-5 flex w-full max-w-[80%] flex-col items-center justify-between overflow-hidden rounded-xl bg-[#f6fff7] p-5 shadow-lg">
+   <div class="m-5 flex w-full max-w-[80%] flex-col items-center justify-between overflow-hidden rounded-xl bg-[#E8FAEA] p-5 shadow-lg">
      <div class="flex flex-col items-center text-center">
        <h5 class="mt-1 text-xl font-bold">Land Features & Surroundings</h5>
        <br />
@@ -294,7 +294,7 @@
 
  <!-- Card 5 -->
  <div class="flex items-center justify-center">
-   <div class="m-5 flex w-full max-w-[80%] flex-col items-center justify-between overflow-hidden rounded-xl bg-[#f6fff7] p-5 shadow-lg">
+   <div class="m-5 flex w-full max-w-[80%] flex-col items-center justify-between overflow-hidden rounded-xl bg-[#E8FAEA] p-5 shadow-lg">
      <div class="flex flex-col items-center text-center">
        <h5 class="mt-1 text-xl font-bold">Secure Your Future <br />Contact Us Today!</h5>
        <br />
@@ -327,7 +327,7 @@
     <div class="flex flex-col items-center justify-center">
       <h1 class="p-5 text-center text-[18px] font-bold text-white md:text-2xl">Location</h1>
       <div class="mb-5 w-80 border-b-2 border-white sm:mb-0 sm:w-full md:w-full"></div>
-      <div class="m-5 h-50 w-20 bg-amber-300"></div>
+      <div class="m-5"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.643408363338!2d80.3509419!3d7.5045604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae33a0bdfc51f21%3A0xb41e7fbefd730eb6!2sSundarapola%20Rd%2C%20Kurunegala!5e0!3m2!1sen!2slk!4v1743384538599!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
 
     <!-- Contact Us Section -->
@@ -341,67 +341,6 @@
   </div>
 </div>
 </div>
-<!--Footer ENDS Here-->
-
-<!--JAVASCRIPT-->
-
-
-  <!-- old script <script>
-
-    //script for dropdown menu
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggleBtn = document.querySelector('.toggle-button');
-      const dropdownMenu = document.querySelector('.dropdown-menu');
-      toggleBtn.addEventListener('click', () => {
-        dropdownMenu.classList.toggle('hidden');
-      });
-    });
-
-    // script for gallery
-    document.addEventListener('DOMContentLoaded', () => {
-
-      const carousel = document.querySelector(".carousel");
-      firstImg =carousel.querySelectorAll("img")[0];
-      arrowIcons = document.querySelectorAll(".wrapper i");
-
-      let isDragStart = false, prevPageX, prevScrollLeft ;
-      let firstImgWidth = firstImg.clientWidth + 8;
-      let isScrolling = false;
-
-
-    arrowIcons.forEach(icon=>{  
-      icon.addEventListener('click',()=>{
-        if(isScrolling) return;
-        isScrolling = true;
-        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
-        setTimeout(() => {
-        isScrolling = false;
-      }, 500);
-
-      });
-    });
-      
-    
-    });
-    document.getElementById('contactUsBtn').addEventListener('click', function () {
-    // Check if the device is mobile or has a dialer app
-    if (isMobileDevice()) {
-      // If it's a mobile device, open the dialer with the phone number
-      window.location.href = 'tel:+1234567890';
-    } else {
-      // If it's a desktop or a device without dialer app, scroll to the footer
-      document.getElementById('footer').scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  });
-
-  // Function to detect if the device is mobile (or has phone dialer support)
-  function isMobileDevice() {
-    return /Mobi|Android|iPhone/i.test(navigator.userAgent);
-  }
-
-  </script> -->
 
  <!-- new script -->
   <script>
